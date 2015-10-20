@@ -1,0 +1,10 @@
+venv/*
+venv/**
+
+data/*
+data/**
+
+*.pyc
+*.sqlite
+.DS_Store
+.coverage
