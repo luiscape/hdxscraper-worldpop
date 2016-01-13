@@ -1,4 +1,6 @@
 ### WorldPop Collector
+[![Build Status](https://travis-ci.org/luiscape/hdxscraper-worldpop.svg)](https://travis-ci.org/luiscape/hdxscraper-worldpop)
+
 Collector for data publicly available from the [WorldPop](http://www.worldpop.org.uk/) project. This collector fetches data from WorldPop's webiste and register equivalents in the [Humanitarian Data Exchange](http://data.hdx.rwlabs.org).
 
 ### Usage
