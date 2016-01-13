@@ -1,7 +1,10 @@
 #!/bin/bash
 
 #
-# Running tests with Nose.
+#  Run tests with coverage.
 #
 source venv/bin/activate
-nosetests --with-coverage -v -d
+nosetests --with-cov \
+          --no-byte-compile \
+          --nologcapture \
+          -v

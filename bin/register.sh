@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# Registering resouces.
+#  Registering resouces.
 #
 source venv/bin/activate
-python app/register/
+python register.py

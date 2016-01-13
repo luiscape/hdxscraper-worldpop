@@ -1,14 +1,15 @@
 setup:
 	bash bin/setup.sh;
 
-run:
-	bash bin/run.sh;
-
 test:
 	bash bin/test.sh;
 
-scrape:
-	bash bin/scrape.sh;
+collect:
+	bash bin/collect.sh;
 
 register:
+	bash bin/register.sh;
+
+run:
+	bash bin/collect.sh;
 	bash bin/register.sh;
