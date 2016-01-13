@@ -15,3 +15,5 @@ or
 $ make setup && make test
 $ make run
 ```
+
+The environment variable `WP_KEY` must be defined before running the program. It will fail to collect data otherwise.
