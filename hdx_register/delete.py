@@ -17,7 +17,7 @@ import requests
 import progressbar as pb
 
 from termcolor import colored as color
-from scraper.utilities.item import item as I
+from collector.utilities.item import item as I
 
 
 def delete_all_datasets_from_organization(organization, hdx_site, apikey, verbose=True):

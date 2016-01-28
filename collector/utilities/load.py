@@ -14,7 +14,7 @@ import csv
 import json
 
 from os import path as p
-from scraper.utilities.item import item
+from collector.utilities.item import item
 
 def load_config(config_path='config/config.json', verbose=True):
   '''

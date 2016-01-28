@@ -19,7 +19,7 @@ import requests
 import progressbar as pb
 
 from termcolor import colored as color
-from scraper.utilities.item import item as I
+from collector.utilities.item import item as I
 
 
 def create_datasets(dataset_dict, hdx_site, apikey, verbose=True, update_all_datasets=False):

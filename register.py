@@ -16,7 +16,7 @@ import scraperwiki
 import progressbar as pb
 
 from termcolor import colored as color
-from scraper.utilities.item import item as I
+from collector.utilities.item import item as I
 
 from hdx_register import load, delete, create
 from collector.utilities.load import load_config
@@ -28,7 +28,7 @@ def main():
   #
   # Setting up configuration: dev = development; prod = production.
   #
-  p = LoadConfig('config/config.json')
+  p = load_config('config/config.json')
   if p is not False:
 
     print('--------------------------------------------------')
@@ -66,7 +66,7 @@ def main():
       # Create datasets, resources, and gallery items.
       #
       create.create_datasets(dataset_dict=dataset_dict, hdx_site=p['hdx_site'], apikey=os.getenv('HDX_KEY'), verbose=p['verbose'], update_all_datasets=p['update_all_datasets'])
-      create.create_datasets(resource_dict=resource_dict, hdx_site=p['hdx_site'], apikey=os.getenv('HDX_KEY'), verbose=p['verbose'], update_all_datasets=p['update_all_datasets'])
+      create.create_resources(resource_dict=resource_dict, hdx_site=p['hdx_site'], apikey=os.getenv('HDX_KEY'), verbose=p['verbose'], update_all_datasets=p['update_all_datasets'])
       # create.create_datasets(gallery_dict=gallery_dict, hdx_site=p['hdx_site'], apikey=os.getenv('HDX_KEY'), verbose=p['verbose'], update_all_datasets=p['update_all_datasets'])
 
     except Exception as e:
