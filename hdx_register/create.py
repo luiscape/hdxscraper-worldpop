@@ -209,7 +209,7 @@ def create_resources(resource_dict, hdx_site, apikey, verbose=True, update_all_d
     if r.status_code != 200:
       if verbose:
         print("%s failed to create %s" % (I('error'), resource["name"]))
-        print(r.json())
+        print(r.text)
 
     else:
       if verbose:
