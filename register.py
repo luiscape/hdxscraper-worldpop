@@ -77,9 +77,9 @@ def main():
 if __name__ == '__main__':
 
   if main() != False:
-    print('%s IFPRI scraper finished successfully.\n' % I('success'))
+    print('%s WorldPop scraper finished successfully.\n' % I('success'))
     scraperwiki.status('ok')
 
   else:
     scraperwiki.status('error', 'Failed to register resources.')
-    os.system("mail -s 'IFPRI scraper collector failed' luiscape@gmail.com")
+    os.system("mail -s 'WorldPop scraper collector failed' luiscape@gmail.com")
