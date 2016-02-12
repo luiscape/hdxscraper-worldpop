@@ -42,10 +42,10 @@ def parse_dataset(data, private=True):
         'name': str(slugify(data['Dataset Title']))[:90],
         'title': str(data['Dataset Title']),
         'owner_org': 'worldpop',
-        'author': 'luiscape',
-        'author_email': 'capelo@un.org',
-        'maintainer': 'worldpop',
-        'maintainer_email': 'ifpri-data@cgiar.org',
+        'author': 'andytatem',
+        'author_email': 'andy.tatem@gmail.com',
+        'maintainer': 'andytatem',
+        'maintainer_email': 'andy.tatem@gmail.com',
         'license_id': 'cc-by-sa',
         'dataset_date': None,    # has to be MM/DD/YYYY
         'subnational': 1,    # has to be 0 or 1. Default 1 for WorldPop.
